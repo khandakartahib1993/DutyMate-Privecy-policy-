@@ -1,0 +1,595 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="DutyMate Privacy Policy by AAW Technologies">
+  <title>DutyMate Privacy Policy | AAW Technologies</title>
+  <style>
+    :root {
+      --bg: #f5f7fb;
+      --card: #ffffff;
+      --text: #172033;
+      --muted: #627086;
+      --line: #e4e9f0;
+      --primary: #155eef;
+      --primary-soft: #eef4ff;
+      --accent: #0f766e;
+      --shadow: 0 12px 32px rgba(15, 23, 42, 0.07);
+      --radius: 20px;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0f172a;
+        --card: #111c31;
+        --text: #eef4ff;
+        --muted: #aebbd0;
+        --line: #28364e;
+        --primary: #7aa2ff;
+        --primary-soft: #172554;
+        --accent: #5eead4;
+        --shadow: none;
+      }
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.7;
+    }
+
+    a { color: var(--primary); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .wrap {
+      width: min(1120px, calc(100% - 28px));
+      margin: 0 auto;
+    }
+
+    .hero {
+      margin: 24px auto 18px;
+      padding: clamp(24px, 5vw, 54px);
+      border-radius: 28px;
+      background:
+        radial-gradient(circle at 90% 10%, rgba(255,255,255,.16), transparent 28%),
+        linear-gradient(135deg, #10224c 0%, #155eef 55%, #0f766e 120%);
+      color: white;
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 30px;
+      padding: 9px 13px;
+      border: 1px solid rgba(255,255,255,.25);
+      border-radius: 14px;
+      background: rgba(255,255,255,.10);
+      backdrop-filter: blur(4px);
+    }
+
+    .brand-mark {
+      width: 38px;
+      height: 38px;
+      display: grid;
+      place-items: center;
+      border-radius: 12px;
+      background: white;
+      color: #155eef;
+      font-weight: 900;
+      font-size: 19px;
+    }
+
+    .brand strong { display: block; line-height: 1.15; }
+    .brand small { opacity: .78; }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(34px, 7vw, 60px);
+      line-height: 1.05;
+      letter-spacing: -0.035em;
+    }
+
+    .hero p {
+      max-width: 760px;
+      margin: 18px 0 0;
+      color: rgba(255,255,255,.88);
+      font-size: 16px;
+    }
+
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 9px;
+      margin-top: 24px;
+    }
+
+    .pill {
+      padding: 7px 11px;
+      border: 1px solid rgba(255,255,255,.22);
+      border-radius: 999px;
+      background: rgba(255,255,255,.09);
+      font-size: 13px;
+    }
+
+    .layout {
+      display: grid;
+      grid-template-columns: 270px minmax(0, 1fr);
+      gap: 18px;
+      padding-bottom: 48px;
+    }
+
+    .toc {
+      position: sticky;
+      top: 18px;
+      align-self: start;
+      padding: 18px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--card);
+      box-shadow: var(--shadow);
+    }
+
+    .toc h2 {
+      margin: 0 0 10px;
+      font-size: 15px;
+    }
+
+    .toc ol {
+      margin: 0;
+      padding-left: 21px;
+    }
+
+    .toc li {
+      margin: 5px 0;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .toc a { color: inherit; }
+    .toc a:hover { color: var(--primary); }
+
+    .content {
+      display: grid;
+      gap: 14px;
+    }
+
+    .notice, .section {
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--card);
+      box-shadow: var(--shadow);
+    }
+
+    .notice {
+      padding: 18px 20px;
+      border-left: 4px solid var(--primary);
+      background: var(--primary-soft);
+    }
+
+    .section {
+      padding: clamp(20px, 4vw, 30px);
+      scroll-margin-top: 18px;
+    }
+
+    .section h2 {
+      margin: 0 0 12px;
+      font-size: 22px;
+      line-height: 1.25;
+    }
+
+    .section p { margin: 0 0 12px; }
+    .section p:last-child { margin-bottom: 0; }
+
+    .section ul {
+      margin: 10px 0 0;
+      padding-left: 21px;
+    }
+
+    .section li { margin: 7px 0; }
+
+    .muted { color: var(--muted); }
+
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+      margin-top: 14px;
+    }
+
+    .service {
+      padding: 14px 15px;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: color-mix(in srgb, var(--card) 92%, var(--primary-soft) 8%);
+    }
+
+    .service strong {
+      display: block;
+      margin-bottom: 4px;
+    }
+
+    .contact {
+      padding: 18px;
+      border-radius: 14px;
+      background: var(--primary-soft);
+    }
+
+    footer {
+      padding: 6px 0 40px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    @media (max-width: 860px) {
+      .layout { grid-template-columns: 1fr; }
+      .toc { position: static; }
+      .service-grid { grid-template-columns: 1fr; }
+    }
+
+    @media print {
+      body { background: #fff; color: #000; }
+      .hero, .toc, .section, .notice { box-shadow: none; }
+      .toc { display: none; }
+      .layout { display: block; }
+      .section { break-inside: avoid; margin-bottom: 12px; }
+      a { color: #000; text-decoration: underline; }
+    }
+  </style>
+</head>
+<body>
+  <header class="wrap hero">
+    <div class="brand" aria-label="AAW Technologies">
+      <div class="brand-mark">D</div>
+      <div>
+        <strong>DutyMate</strong>
+        <small>by AAW Technologies</small>
+      </div>
+    </div>
+    <h1>Privacy Policy</h1>
+    <p>
+      This Privacy Policy explains how DutyMate handles roster information,
+      Google account access, local files, backups, exported reports,
+      advertising and privacy choices.
+    </p>
+    <div class="meta">
+      <span class="pill">Last updated: 29 August 2026</span>
+      <span class="pill">Personal Mode</span>
+      <span class="pill">Professional Mode</span>
+      <span class="pill">Android</span>
+    </div>
+  </header>
+
+  <main class="wrap layout">
+    <nav class="toc" aria-label="Privacy policy contents">
+      <h2>On this page</h2>
+      <ol>
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#information">Information we handle</a></li>
+        <li><a href="#sources">Roster sources & files</a></li>
+        <li><a href="#local">Local storage</a></li>
+        <li><a href="#google">Google Sign-In & backup</a></li>
+        <li><a href="#reports">Reports & exports</a></li>
+        <li><a href="#ads">Advertising & consent</a></li>
+        <li><a href="#payments">Premium & payments</a></li>
+        <li><a href="#services">Third-party services</a></li>
+        <li><a href="#use">How information is used</a></li>
+        <li><a href="#sharing">Sharing & sale</a></li>
+        <li><a href="#retention">Retention & deletion</a></li>
+        <li><a href="#choices">Your choices</a></li>
+        <li><a href="#security">Security</a></li>
+        <li><a href="#children">Children</a></li>
+        <li><a href="#international">International processing</a></li>
+        <li><a href="#changes">Changes</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ol>
+    </nav>
+
+    <article class="content">
+      <div class="notice">
+        <strong>Privacy-first design.</strong>
+        DutyMate is designed to process roster information primarily on the user's device.
+        AAW Technologies does not sell roster information to advertisers.
+      </div>
+
+      <section class="section" id="overview">
+        <h2>1. Overview</h2>
+        <p>
+          DutyMate is a duty-roster viewing, history, calendar and reporting application
+          developed by AAW Technologies. The app supports Personal Mode and Professional Mode.
+        </p>
+        <p>
+          The current app does not require an AAW Technologies account or a separate
+          AAW Technologies roster server for normal roster viewing. Some optional features
+          use Google services, including Google Sign-In, app-specific Google Drive backup,
+          Google AdMob advertising and Google User Messaging Platform (UMP).
+        </p>
+      </section>
+
+      <section class="section" id="information">
+        <h2>2. Information we handle</h2>
+        <p>Depending on the features you use, DutyMate may process:</p>
+        <ul>
+          <li>Your name, designation, organization name and selected employee profile.</li>
+          <li>Shift codes, duty dates, leave entries, roster changes and calendar notes.</li>
+          <li>Calculated duty hours, day/night duty totals, leave history and report summaries.</li>
+          <li>In Professional Mode, employee names, designations, teams/groups, shift assignments, leave entries and related roster information contained in the roster source you connect.</li>
+          <li>App preferences, shift mappings, colors, source settings and refresh metadata.</li>
+          <li>If you use Google Sign-In, basic account information such as your Google email address and display name.</li>
+        </ul>
+        <p>
+          DutyMate does not receive your Google password. Google authentication is handled by Google.
+        </p>
+      </section>
+
+      <section class="section" id="sources">
+        <h2>3. Roster sources and imported files</h2>
+        <p>
+          DutyMate can read supported roster information from shared Google Sheets or Drive sources,
+          and from Excel or PDF files that you explicitly select. The app reads the roster content
+          needed to identify employees, dates, shift codes, groups, designations and related details.
+        </p>
+        <p>
+          Imported files are selected through Android's file/document access system. DutyMate does
+          not require unrestricted access to every personal file on your device simply to import a roster.
+          A connected source link or selected document reference may be stored locally so the app can
+          reopen or refresh the same source later.
+        </p>
+        <p>
+          Professional Mode may display information about other employees. You should use Professional
+          Mode only when you are authorized to access and process the relevant roster information.
+        </p>
+      </section>
+
+      <section class="section" id="local">
+        <h2>4. Information stored on your device</h2>
+        <p>
+          DutyMate stores app settings and roster-related cache locally so that the app can work
+          efficiently, preserve historical information and support offline viewing. Local data may include
+          your selected employee, roster snapshots, historical roster data, Full Roster data, shift
+          mappings and colors, calendar notes, report data, Personal/Professional mode preference,
+          source settings and backup settings.
+        </p>
+        <p>
+          Local app data normally remains on the device until it is replaced, cleared through Android
+          app settings, or removed when the app's data is deleted or the app is uninstalled, subject to
+          Android's behavior.
+        </p>
+      </section>
+
+      <section class="section" id="google">
+        <h2>5. Google Sign-In and Google Drive backup</h2>
+        <p>
+          Google Sign-In is optional. It is used for DutyMate backup/restore features and may also be used
+          for entitlement-related functions where applicable.
+        </p>
+        <p>
+          If you enable Google backup and sync, DutyMate uses Google Drive's private app-specific
+          <strong>appDataFolder</strong> storage rather than requesting general access to all files in your
+          normal Google Drive. The hidden DutyMate backup may contain saved roster history, selected
+          employee information, organization details, shift mappings, notes, report-related data and
+          relevant settings required to restore DutyMate on another device.
+        </p>
+        <p>
+          Signing out stops DutyMate from using the signed-in Google session. A backup already stored
+          in your Google account may remain there until it is replaced or removed using the applicable
+          Google/account controls.
+        </p>
+      </section>
+
+      <section class="section" id="reports">
+        <h2>6. PDF, Excel, save, print and share</h2>
+        <p>
+          When you create a PDF or Excel report, DutyMate generates it from roster information available
+          in the app. Personal reports may contain your own roster information. Professional reports may
+          contain multiple employees' names, designations, shifts, leave dates and calculated duty hours.
+        </p>
+        <p>
+          Reports are saved, printed or shared only when you choose the relevant action. After a report
+          leaves DutyMate, its handling is controlled by the destination app, storage provider, printer,
+          recipient or service that you select.
+        </p>
+      </section>
+
+      <section class="section" id="ads">
+        <h2>7. Advertising, identifiers and consent</h2>
+        <p>
+          Eligible Free Personal Mode may display Google AdMob advertising. Depending on the screen and
+          app state, this can include adaptive banner ads, interstitial ads at natural navigation breaks,
+          and App Open ads during eligible app starts. Premium and Professional experiences are intended
+          to follow their configured ad-free access rules.
+        </p>
+        <p>
+          Google Mobile Ads may process information used to deliver, limit, measure and protect
+          advertising. Depending on your region, consent choices and Google configuration, this may include
+          device or advertising identifiers, IP address, app/device information, ad interactions,
+          diagnostic information, approximate location derived from signals such as IP address, and
+          consent-related information.
+        </p>
+        <p>
+          Before eligible ad requests, DutyMate uses Google's User Messaging Platform (UMP) to refresh
+          the applicable advertising-consent status. If Google determines that a consent message is
+          required, a Google-managed privacy message may be displayed. Where an ongoing privacy-options
+          entry point is available, DutyMate provides an <strong>Ad privacy choices</strong> entry in
+          Settings so users can review or update applicable choices.
+        </p>
+        <p>
+          AAW Technologies does not sell DutyMate roster information to advertisers and does not use
+          roster contents to create advertising profiles.
+        </p>
+      </section>
+
+      <section class="section" id="payments">
+        <h2>8. Premium features and payments</h2>
+        <p>
+          DutyMate may offer Personal Premium, Professional Premium and Complete Premium access levels.
+          When production in-app purchases or subscriptions are enabled, payments are processed through
+          the applicable app-store billing system, such as Google Play Billing.
+        </p>
+        <p>
+          AAW Technologies does not need your full payment-card details to provide app-store purchases.
+          Google Play or another applicable store may process purchase, payment, account and transaction
+          information under its own terms and privacy policy.
+        </p>
+      </section>
+
+      <section class="section" id="services">
+        <h2>9. Third-party services</h2>
+        <p>The following providers may process information when you use the relevant feature:</p>
+        <div class="service-grid">
+          <div class="service">
+            <strong>Google AdMob & Google UMP</strong>
+            Advertising, ad measurement, fraud prevention, consent and privacy messaging.
+            <br><a href="https://policies.google.com/privacy" rel="noopener noreferrer">Google Privacy Policy</a>
+          </div>
+          <div class="service">
+            <strong>Google Sign-In</strong>
+            Optional account authentication used for supported Google-connected features.
+            <br><a href="https://policies.google.com/privacy" rel="noopener noreferrer">Google Privacy Policy</a>
+          </div>
+          <div class="service">
+            <strong>Google Drive API</strong>
+            Optional private app-specific backup and restore through the signed-in Google account.
+            <br><a href="https://policies.google.com/privacy" rel="noopener noreferrer">Google Privacy Policy</a>
+          </div>
+          <div class="service">
+            <strong>Google Play</strong>
+            App distribution and, when enabled, in-app purchase/subscription processing.
+            <br><a href="https://policies.google.com/privacy" rel="noopener noreferrer">Google Privacy Policy</a>
+          </div>
+        </div>
+        <p class="muted" style="margin-top:14px">
+          DutyMate does not currently rely on a separate AAW Technologies analytics or crash-reporting
+          service as part of the data handling described by this policy. If such a production service is
+          introduced later, this policy will be updated before it is relied on as covered by this notice.
+        </p>
+      </section>
+
+      <section class="section" id="use">
+        <h2>10. How information is used</h2>
+        <p>DutyMate uses information to:</p>
+        <ul>
+          <li>Display your roster, calendar, duty history and reports.</li>
+          <li>Calculate duty hours, shift totals, leave information and roster summaries.</li>
+          <li>Load and refresh a roster source you connect.</li>
+          <li>Provide Professional Mode roster viewing and reporting when authorized.</li>
+          <li>Save your settings, notes, history and app preferences.</li>
+          <li>Provide optional Google account backup and restore.</li>
+          <li>Generate files that you choose to save, print or share.</li>
+          <li>Display advertising to eligible Free Personal Mode users in accordance with applicable consent choices.</li>
+          <li>Maintain app security, reliability and expected functionality.</li>
+        </ul>
+      </section>
+
+      <section class="section" id="sharing">
+        <h2>11. Sharing and sale of information</h2>
+        <p>
+          AAW Technologies does not sell roster information or employee roster data to advertisers.
+          Information may be processed by third-party service providers only when you use a feature that
+          depends on that provider, such as Google Sign-In, Google Drive backup, Google AdMob/UMP or
+          Google Play.
+        </p>
+        <p>
+          When you intentionally share or export a roster/report, the information is sent to the
+          destination you choose. You are responsible for having appropriate authorization before
+          exporting or sharing information relating to other employees.
+        </p>
+      </section>
+
+      <section class="section" id="retention">
+        <h2>12. Data retention and deletion</h2>
+        <p>
+          Local roster history and settings may remain for as long as you keep DutyMate app data because
+          preserving history is part of the app's functionality. You can remove local DutyMate data by
+          clearing the app's storage or uninstalling the app, subject to Android behavior.
+        </p>
+        <p>
+          Local deletion does not necessarily delete a previous Google Drive app-specific backup.
+          Cloud backup data is associated with the connected Google account and is subject to the backup
+          and account controls made available by Google and DutyMate.
+        </p>
+      </section>
+
+      <section class="section" id="choices">
+        <h2>13. Your choices and controls</h2>
+        <ul>
+          <li>You can use core roster features without signing in to an AAW Technologies account.</li>
+          <li>You choose whether to connect Google Sign-In and Google Drive backup.</li>
+          <li>You can sign out of the Google account used by DutyMate.</li>
+          <li>You select which local files or supported roster sources DutyMate can read.</li>
+          <li>You decide when to create, save, print or share a report.</li>
+          <li>Where applicable, you can review or change Google advertising consent choices through the privacy message or DutyMate's Ad privacy choices setting.</li>
+          <li>You may use Android system settings to manage app permissions, notifications and local app data.</li>
+        </ul>
+      </section>
+
+      <section class="section" id="security">
+        <h2>14. Security</h2>
+        <p>
+          DutyMate uses platform-provided authentication, scoped file access and app-specific Google Drive
+          storage where applicable. Reasonable efforts are made to limit access to what a feature needs.
+          However, no app, device, network or cloud service can guarantee absolute security.
+        </p>
+        <p>
+          You should protect your device, Google account, exported reports and any roster files containing
+          personal or organizational information.
+        </p>
+      </section>
+
+      <section class="section" id="children">
+        <h2>15. Children's privacy</h2>
+        <p>
+          DutyMate is designed for duty-roster use in work and organizational contexts and is not
+          specifically directed to children. Professional Mode should not be used to process children's
+          personal information unless the user has a lawful and appropriate reason and authorization to do so.
+        </p>
+      </section>
+
+      <section class="section" id="international">
+        <h2>16. International processing</h2>
+        <p>
+          Third-party providers such as Google may process information on servers located in different
+          countries. Their handling of information is governed by their own terms, privacy policies and
+          applicable legal safeguards.
+        </p>
+      </section>
+
+      <section class="section" id="changes">
+        <h2>17. Changes to this policy</h2>
+        <p>
+          AAW Technologies may update this Privacy Policy when DutyMate features, data practices,
+          advertising configuration, billing, legal requirements or third-party services change.
+          The "Last updated" date at the top of this page will be revised when a new version takes effect.
+        </p>
+      </section>
+
+      <section class="section" id="contact">
+        <h2>18. Contact</h2>
+        <div class="contact">
+          <strong>AAW Technologies</strong>
+          <p style="margin:8px 0 0">
+            Developer of DutyMate.
+          </p>
+          <p style="margin:8px 0 0">
+            For privacy questions, support or data-related requests, please use the official
+            developer contact information published on DutyMate's Google Play Store listing.
+          </p>
+        </div>
+      </section>
+    </article>
+  </main>
+
+  <footer class="wrap">
+    © 2026 AAW Technologies. All rights reserved. • DutyMate Privacy Policy
+  </footer>
+</body>
+</html>
